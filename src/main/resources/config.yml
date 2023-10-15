@@ -1,0 +1,34 @@
+#+----------------------------------+
+#|                                  |
+#|        Название предметов        |
+#|                                  |
+#+----------------------------------+
+items:
+  player_add_item_compass:
+    compass:
+      name: "§1§lВыбор §c§lКоманды!"
+  player_select_team:
+    blue_glazed_terracotta:
+      name: "§1§lКоманда синих"
+    red_glazed_terracotta:
+      name: "§c§lКоманда красных"
+
+#+----------------------------------+
+#|                                  |
+#|  Координаты по которым будем     |
+#|       Телепортировать игроков    |
+#|                                  |
+#+----------------------------------+
+
+coordinates:
+  location_spawn_team_blue:
+    x: 145
+    y: 93
+    z: 198
+  location_spawn_team_red:
+    x: 145
+    y: 93
+    z: 148
+messages:
+  timer_title: "§с§l<time>"
+  timer_subtitle: " "

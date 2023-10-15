@@ -1,0 +1,5 @@
+name: ColorControlCristalix
+version: '${version}'
+main: mrblock.colorcontrolcristalix.ColorControlCristalix
+commands:
+  startTimerTest: {}
