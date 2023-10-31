@@ -1,8 +1,7 @@
 package mrblock.colorcontrolcristalix.listener;
 
 import mrblock.colorcontrolcristalix.ColorControlCristalix;
-import mrblock.colorcontrolcristalix.NameItems;
-import mrblock.colorcontrolcristalix.game.GameTimer;
+import mrblock.colorcontrolcristalix.util.NameItems;
 import mrblock.colorcontrolcristalix.mongodb.PlayerData;
 import mrblock.colorcontrolcristalix.mongodb.PlayerStorage;
 import org.bukkit.*;
@@ -26,8 +25,8 @@ public class PlayerConnectServer implements Listener {
         this.playerStorage = colorControlCristalix.getPlayerStorage();
         config = plugin.getConfig();
 
-        if (GameTimer.statusGame)
-            updateScoreBoardLobby();
+       // if (StartGameTimer.statusGame)
+         //   updateScoreBoardLobby();
 
     }
 

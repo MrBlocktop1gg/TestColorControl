@@ -3,7 +3,6 @@ package mrblock.colorcontrolcristalix;
 import lombok.Getter;
 import lombok.Setter;
 import mrblock.colorcontrolcristalix.game.GamePlayer;
-import mrblock.colorcontrolcristalix.game.TestCommandStartTimer;
 import mrblock.colorcontrolcristalix.listener.CancelledListener;
 import mrblock.colorcontrolcristalix.listener.PlayerConnectServer;
 import mrblock.colorcontrolcristalix.listener.SelectTeam;
@@ -29,13 +28,11 @@ public final class ColorControlCristalix extends JavaPlugin {
         plugin = this;
         playerStorage = new PlayerStorage();
 
-        getCommand("startTimerTest").setExecutor(new TestCommandStartTimer(plugin, this));
-
         registerListeners(
                 new PlayerConnectServer(plugin, this),
-                new SelectTeam(plugin));
-                new GamePlayer(uuid);
-                new CancelledListener();
+                new SelectTeam(plugin),
+                new GamePlayer(),
+                new CancelledListener());
     }
 
     public void registerListeners(Listener... listeners) {

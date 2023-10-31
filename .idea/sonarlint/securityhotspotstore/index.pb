@@ -1,20 +1,14 @@
 
 v
 Fsrc/main/java/mrblock/colorcontrolcristalix/mongodb/PlayerStorage.java,6\c\6cf55ad4694ef266e6cf4378880007fa1e9f6d14
-{
-Ksrc/main/java/mrblock/colorcontrolcristalix/game/TestCommandStartTimer.java,1\7\17773c94d3e1da0db39bc3049f41fe57fbd5a33c
 s
 Csrc/main/java/mrblock/colorcontrolcristalix/mongodb/PlayerData.java,d\d\dd75190b08f2f2c93b0a0559c5dc66d9e7914f87
 t
 Dsrc/main/java/mrblock/colorcontrolcristalix/listener/SelectTeam.java,4\5\4571b153bb51bc59596699943e3dabf313ac416d
 t
 Dsrc/main/java/mrblock/colorcontrolcristalix/game/PlayerDataGame.java,c\5\c5d6cec39b8a18abdc64b8e88be6a153fe02de57
-j
-:src/main/java/mrblock/colorcontrolcristalix/TeamColor.java,f\a\fa442681e98bad92517f0275dad98503d6211fff
 v
 Fsrc/main/java/mrblock/colorcontrolcristalix/ColorControlCristalix.java,e\1\e17af74b312d08f68f43468ba2111bb39bdcc304
-j
-:src/main/java/mrblock/colorcontrolcristalix/NameItems.java,0\8\08433260d7b9fdcfb7f45580696f8b5d8cfd25f0
 o
 ?src/main/java/mrblock/colorcontrolcristalix/game/GameTimer.java,8\2\82860e64d09eb89336af0ac7e256d0ed9eb7003e
 p
@@ -25,3 +19,21 @@ Ksrc/main/java/mrblock/colorcontrolcristalix/listener/CancelledListener.java,5\
 Msrc/main/java/mrblock/colorcontrolcristalix/listener/PlayerConnectServer.java,9\7\97b12e2f423459e9545b3540909089cac085fcdd
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+t
+Dsrc/main/java/mrblock/colorcontrolcristalix/game/ScoreBoardGame.java,e\8\e823ec24dfc58291c8252ac9c297808049013f47
+t
+Dsrc/main/java/mrblock/colorcontrolcristalix/game/StartGameTimer.java,3\3\3325eaf0172236a4fda82c39c2d3594612b20632
+p
+@src/main/java/mrblock/colorcontrolcristalix/utils/NameItems.java,e\8\e80cd6a55e20c3b719b8f601d9c5dc9c54d357e8
+l
+<src/main/java/mrblock/colorcontrolcristalix/utils/Alarm.java,1\8\1857194f6dc22493670313d8b64892c2897c7dd9
+o
+?src/main/java/mrblock/colorcontrolcristalix/game/GameState.java,7\b\7b41b1de84e3d206a452465b9e5c8f2083d935a6
+t
+Dsrc/main/java/mrblock/colorcontrolcristalix/manager/GameManager.java,0\e\0ea5f5f4bd15e37fdcfc62c6520f8d194bb78562
+q
+Asrc/main/java/mrblock/colorcontrolcristalix/game/GameWaiting.java,f\7\f7b13f025e93089ab2460f4bbf8d424db5b1c933
+o
+?src/main/java/mrblock/colorcontrolcristalix/game/TeamColor.java,0\3\036d75c83eb84f2b3c765e9c9822af24c75a446e
+n
+>src/main/java/mrblock/colorcontrolcristalix/game/GameCube.java,3\f\3f4aa611e4e7b0725880c8f0ba349fde76f54a5b

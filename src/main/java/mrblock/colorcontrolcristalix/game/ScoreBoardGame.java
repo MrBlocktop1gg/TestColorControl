@@ -15,14 +15,13 @@ public class ScoreBoardGame extends PlayerDataGame {
     PlayerStorage playerStorage;
 
     public ScoreBoardGame(UUID uuid, ColorControlCristalix colorControlCristalix) {
-        super(uuid);
 
         this.colorControlCristalix = colorControlCristalix;
         this.playerStorage = colorControlCristalix.getPlayerStorage();
         this.plugin = colorControlCristalix;
 
-        if (!GameTimer.statusGame)
-            updateScoreBoardGame();
+       if (StartGameTimer.gameState == GameState.GAME)
+           updateScoreBoardGame();
     }
 
     public void createScoreBoard(Player player) {
@@ -31,8 +30,8 @@ public class ScoreBoardGame extends PlayerDataGame {
         Objective objective = scoreboard.registerNewObjective("§b§lCCGame", "dummy");
         objective.setDisplaySlot(DisplaySlot.SIDEBAR);
         objective.setDisplayName("   §b§lColorControl   ");
-        Score lifePlayer = objective.getScore("§c§lВаши жизни: ");
-        lifePlayer.setScore(3);
+        Score lifePlayer = objective.getScore("§c§lЖизни команды: ");
+        lifePlayer.setScore(getLifeTeam());
         Score kills = objective.getScore("§c§lВаши Убийства: ");
         kills.setScore(0);
 
@@ -44,8 +43,8 @@ public class ScoreBoardGame extends PlayerDataGame {
             for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
                 Scoreboard scoreboard = onlinePlayer.getScoreboard();
                 Objective objective = scoreboard.getObjective(DisplaySlot.SIDEBAR);
-                Score lifePlayer = objective.getScore("§c§lВаши жизни: ");
-                lifePlayer.setScore(getRemoveLifePlayer());
+                Score lifeTeam = objective.getScore("§c§lЖизни команды: ");
+                lifeTeam.setScore(getLifeGameTeam());
                 Score kills = objective.getScore("§c§lВаши Убийства: ");
                 kills.setScore(getKills());
             }

@@ -1,4 +1,4 @@
-package mrblock.colorcontrolcristalix;
+package mrblock.colorcontrolcristalix.util;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;

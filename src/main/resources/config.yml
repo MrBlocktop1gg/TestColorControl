@@ -32,3 +32,7 @@ coordinates:
 messages:
   timer_title: "§с§l<time>"
   timer_subtitle: " "
+  timer_fadeln: 1
+  timer_stay: 20
+  timer_fadeOut: 1
+  timer_game_bossbar: "§2§l<time>"

@@ -6,11 +6,11 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 
-import java.util.UUID;
+public class GamePlayer implements Listener {
+    PlayerDataGame playerDataGame;
 
-public class GamePlayer extends PlayerDataGame implements Listener {
-    public GamePlayer(UUID uuid) {
-        super(uuid);
+    public GamePlayer() {
+        playerDataGame = new PlayerDataGame();
     }
 
     @EventHandler
@@ -20,15 +20,15 @@ public class GamePlayer extends PlayerDataGame implements Listener {
         Player killer = player.getKiller();
 
         if (killer != player)
-            setRemoveLifePlayer();
+            playerDataGame.setKills();
 
         if (killer == player)
-            setKills();
+            playerDataGame.setKills();
 
-        if (getRemoveLifePlayer() <= 0) {
+        if (playerDataGame.getRemoveLifePlayer() <= 0) {
 
-          //  new PlayerConnectServer(plugin, colorControlCristalix).createScoreBoardLobby(player);
-          //  playerData.addDefeats();
+    //        new PlayerConnectServer(plugin, colorControlCristalix).createScoreBoardLobby(player);
+      //      playerData.addDefeats();
             player.setGameMode(GameMode.SPECTATOR);
             player.sendTitle("", "§c§lПоражение!", 15, 50, 20);
         }
